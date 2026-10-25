@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello, I am Aroob</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #2d3748;
+      padding: 1rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      color: #1a202c;
+    }
+    p {
+      color: #718096;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    button {
+      background: #667eea;
+      color: #ffffff;
+      border: none;
+      padding: 0.75rem 1.75rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+      background: #5a67d8;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+    #greeting {
+      margin-top: 1.25rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #4a5568;
+      min-height: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello, I am Aroob! 👋</h1>
+    <p>Welcome to my project. Built with simple HTML, CSS, and JavaScript.</p>
+    <button onclick="sayHi()">Say Hello</button>
+    <div id="greeting"></div>
+  </div>
+
+  <script>
+    function sayHi() {
+      const greetingEl = document.getElementById('greeting');
+      greetingEl.innerText = "✨ Thanks for stopping by! Have a great day! ✨";
+    }
+  </script>
+</body>
+</html>
